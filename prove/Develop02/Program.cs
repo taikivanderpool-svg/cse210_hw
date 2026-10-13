@@ -15,15 +15,19 @@ class Program
         
         while (command != "7")
         {
-            Console.WriteLine("""Please select one of the following choices:""");
-            Console.WriteLine("1. Write");
-            Console.WriteLine("2. Display");
-            Console.WriteLine("3. Load");
-            Console.WriteLine("4. Save");
-            Console.WriteLine("5. Add new prompt");
-            Console.WriteLine("6. Unload file");
-            Console.WriteLine("7. Quit");
-            Console.Write("What would you like to do? ");
+            Console.WriteLine(@"
+Please select one of the following choices:
+1. Write
+2. Display
+3. Load
+4. Save
+5. Add new prompt
+6. Unload file
+7. Quit
+
+What would you like to do? 
+            ");
+            
             command = Console.ReadLine();
             Console.WriteLine("");
 
