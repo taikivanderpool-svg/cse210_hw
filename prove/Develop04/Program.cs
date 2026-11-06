@@ -1,6 +1,12 @@
 using System;
 using System.Diagnostics;
 
+
+//I coded so that in the Reflection activity, the activity will never give the same prompt twice.
+//I coded so that the program will loop over and over again until the user explicitley exits the
+//program. This means that the user can run the program once and do all 3 activities and the same
+//activity multiple times.
+//I coded the breathing so that it visibly counts to the user how long to breath in and out.
 class Program
 {
     static void Main(string[] args)

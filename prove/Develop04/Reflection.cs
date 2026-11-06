@@ -19,7 +19,7 @@ class Reflection : Activity
     public Reflection()
     {
         SetName("Reflection");
-        
+
         string description = """
         Welcome to the reflection activity.
 
@@ -42,6 +42,13 @@ class Reflection : Activity
             "Who are some of your personal heroes?"
         ];
         List<string> questions = _questions;
+
+        //if the program runs out of questions, it will refresh and begin reusing questions
+        if (questions.Count() == 0)
+        {
+            questions = _questions;
+        }
+        
         Random random = new Random();
         string prompt = prompts[random.Next(0, prompts.Count())];
 
