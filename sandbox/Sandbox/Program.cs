@@ -1,32 +1,26 @@
-using System;
-using System.Globalization;
-using System.Runtime.InteropServices;
+// using System;
+// using System.Globalization;
+// using System.Runtime.InteropServices;
 
 class Program
 {
     static void Main(string[] args)
     {
         
-        
-        List<string> numList = ["hello", "Hello", "HEllo", "HELlo"];
-        // numList.Add("hello");
-        // numList.Add("Hello");
-        // numList.Add("HEllo");
-        // numList.Add("HELlo");
-        //highlight a line and then press (CTRL+/) to comment it and vice versa
+    List<string> test = ["a", "b", "c", "d"];
 
-        static void addOne(ref List<string> numbList)
-        {
-            numbList.Add("Oh no");
-        }
+    Console.WriteLine(test[0]);
+    Console.WriteLine(test[1]);
+    Console.WriteLine(test[2]);
+    Console.WriteLine(test[3]);
 
 
-        addOne(ref numList);
+    List<string> test2 = test;
 
-        for (int i=0; i<numList.Count; i++)
-        {
-            Console.WriteLine(numList[i]);
-        }
-        Console.WriteLine(numList);
+
+    Console.WriteLine(test2[0]);
+    Console.WriteLine(test2[1]);
+    Console.WriteLine(test2[2]);
+    Console.WriteLine(test2[3]);
     }
 }
